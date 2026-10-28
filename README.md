@@ -1,17 +1,12 @@
-# Uzbekistan: law history
+# Uzbekistan law in git (building)
 
-This repository will hold the legislation of Uzbekistan (UZ) as a history: one file per provision and one commit per law taking effect, dated by the day it took force, with the law that made each change as the commit author. It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law), which places it at `uz/` in the world tree.
+Status: **building** (work in progress on the `wip` branch; `main` follows when the first clean build passes its checks).
 
-**Status:** no law yet. This first commit records where the law of Uzbekistan can be read and what a build would need.
+Source: Qonunchilik ma'lumotlari milliy bazasi (National Database of Legislation of the Republic of Uzbekistan),
+https://lex.uz, kept by the "Adolat" National Legal Information Centre under the Ministry of Justice. Texts are taken
+in Uzbek (Latin script) from each act's dated editions.
 
-**Can it be built?** Past versions by date are online, but with no API or bulk download, so a build has to read the site page by page.
+Acts: the Constitution of 8 December 1992 (all editions to 2021) and the Constitution of 30 April 2023 (in force
+1 May 2023, with its 2026 amendment).
 
-**This commit is a placeholder.** The first real build must replace this history from scratch and force-push. It must never append law commits on top of it: they are dated by when each law took effect, often decades earlier, so dates in `main` would run backwards and break every on-date lookup. Builders should refuse to append when the root commit is this placeholder (its subject ends "sources, before any law").
-
-**Official sources**
-
-- [Lex.uz](https://lex.uz): Keeps editions, in Russian and English too.
-
-All sources, with their status, are in [SOURCES.md](SOURCES.md). How these files were made is in [REPRODUCE.md](REPRODUCE.md).
-
-This repository describes sources; it is not legal advice and holds no legal text yet.
+Private repository. lex.uz terms limit reuse (see LICENSE when the build lands).
