@@ -1,0 +1,10 @@
+{
+  "path": "uz",
+  "code": "UZ",
+  "name": "Uzbekistan",
+  "level": "country",
+  "repo": "https://github.com/lexifina/uzbekistan-law",
+  "build": "scrape",
+  "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
+  "register_date": "2026-10-28"
+}
